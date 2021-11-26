@@ -25,6 +25,7 @@
 }
 
 .container {
+  position: relative;
   width: 100%;
   border-top: 5px solid #000;
   border-bottom: 5px solid #000;
@@ -32,26 +33,73 @@
 }
 
 .lottie-animation {
-  max-width: 600px;
+  max-width: 580px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .image {
   width: 100%;
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
 }
 
 .link-block {
   max-width: 150px;
 }
 
+.link-block.w--current {
+  max-width: 220px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.link {
+  margin-right: auto;
+  margin-left: 0px;
+  color: #313c92;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.text-block {
+  margin-right: 5px;
+  margin-left: auto;
+  font-size: 17px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 479px) {
-  .image {
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+  .absolute {
+    margin-bottom: 20px;
   }
 }
